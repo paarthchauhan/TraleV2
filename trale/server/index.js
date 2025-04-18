@@ -23,7 +23,7 @@ const PORT = process.env.PORT || 8800;
 dbConnection();
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CROSS_ORIGIN,
+  origin: [process.env.CROSS_ORIGIN_1, process.env.CROSS_ORIGIN_2, process.env.CROSS_ORIGIN_3, process.env.CROSS_ORIGIN_4],
   credentials: true,
 }));
 app.use(bodyParser.json());
