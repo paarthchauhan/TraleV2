@@ -21,9 +21,11 @@ app.use(express.static(path.join(__dirname, "views/build")));
 const PORT = process.env.PORT || 8800;
 
 dbConnection();
-
 app.use(helmet());
-app.use(cors());
+app.use(cors({
+  origin: process.env.CROSS_ORIGIN,
+  credentials: true,
+}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json({ limit: "10mb" }));
