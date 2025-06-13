@@ -76,7 +76,7 @@ Trale is a social media application built with the MERN stack (MongoDB, Express,
 
 ## Usage
 
-1. Open your browser and navigate to `http://localhost:3000`.
+1. Open your browser and navigate to http://localhost:3000.
 2. Sign up for a new account or log in with an existing one.
 3. Explore the features such as creating posts, messaging, and more.
 
